@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  margin: 0;  
+  background-color: white;
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  max-width: 400px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%; /* Ensure the home takes up full height */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.star {
+  font-size: 24px;
+  color: grey;
+}
+
+.star.filled {
+  color: gold;
+}
+
+.rating {
+  display: flex;
+}
+
+.size-selection {
+  display: flex;
+  gap: 10px;
+}
+
+.size-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.size-box.selected {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.display-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the t-shirt horizontally */
+}
+
+.display {
+  width: 70%; /* Reduce width to 70% of the container */
+  height: 300px; /* Set a fixed height for the display section */
+}
+
+.display-options {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.selected-tshirt {
+  width: 100%; /* Full width of the display box */
+  height: 100%;
+  object-fit: contain; /* Ensure the t-shirt image scales properly */
+}
+
+.option-image {
+  width: 50px; /* Reduce the size of option images */
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.option-image:hover {
+  border-color: gold;
+}
+
+.header {
+  margin-top: 10px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.price {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.description {
+  margin: 10px;
+}
+
+.description-heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.description-content {
+  font-weight: 300;
+}
+
+.size {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.size-text {
+  margin-bottom: 10px;
+}
+/* Styles for color and other sections */
+.color-selection {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  
+}
+
+.selected-color {
+  border-color: gold; /* Highlight selected color */
+}
+
+/* Custom image display */
+.custom-image-display {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.custom-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Ensure the size box and display remain consistent */
+.size-box.selected {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+.tshirt-svg {
+  margin: 20px auto; /* Center the SVG */
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.upload input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.custom-tshirt {
+  margin-top: 20px;
+
+}
+.color {
+  margin: 10px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  margin: 0;  
+  background-color: white;
+  color: white;
+  font-family: "Josefin Sans";
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  max-width: 400px;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%; /* Ensure the home takes up full height */
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.star {
+  font-size: 24px;
+  color: grey;
+}
+
+.star.filled {
+  color: gold;
+}
+
+.rating {
+  display: flex;
+}
+
+.size-selection {
+  display: flex;
+  gap: 10px;
+}
+
+.size-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.size-box.selected {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.display-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the t-shirt horizontally */
+}
+
+.display {
+  width: 70%; /* Reduce width to 70% of the container */
+  height: 300px; /* Set a fixed height for the display section */
+}
+
+.display-options {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.selected-tshirt {
+  width: 100%; /* Full width of the display box */
+  height: 100%;
+  object-fit: contain; /* Ensure the t-shirt image scales properly */
+}
+
+.option-image {
+  width: 50px; /* Reduce the size of option images */
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid transparent;
+}
+
+.option-image:hover {
+  border-color: gold;
+}
+
+.header {
+  margin-top: 10px;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+  font-size: 25px;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.price {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 10px;
+  margin-top: 0px;
+}
+
+.description {
+  margin: 10px;
+}
+
+.description-heading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 2%;
+}
+
+.description-content {
+  font-weight: 300;
+}
+
+.size {
+  margin: 10px;
+  font-size: 20px;
+}
+
+.size-text {
+  margin-bottom: 10px;
+}
+/* Styles for color and other sections */
+.color-selection {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.color-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  
+}
+
+.selected-color {
+  border-color: gold; /* Highlight selected color */
+}
+
+/* Custom image display */
+.custom-image-display {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.custom-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+/* Ensure the size box and display remain consistent */
+.size-box.selected {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+.tshirt-svg {
+  margin: 20px auto; /* Center the SVG */
+}
+
+.display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upload {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.upload input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.custom-tshirt {
+  margin-top: 20px;
+  
+}
+.color {
+  margin: 10px;
+}
+/* Styling for Front and Back Options */
+.custom-tshirt-options {
+  display: flex;
+  justify-content: space-around; /* Spread the options evenly */
+  margin-top: 10px;
+}
+
+.option {
+  display: inline-block;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+}
+
+.option.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.custom-tshirt-front,
+.custom-tshirt-back {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #222;
+  color: white;
+}
+
+.custom-tshirt-front-options,
+.custom-tshirt-back-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.custom-tshirt h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.custom-tshirt svg {
+  margin-top: 10px;
+  width: 150px; /* Adjust the size of the T-shirt SVG */
+  height: auto;
+}
+
+/* Make the Upload Section Look Better */
+.upload {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.upload input[type="file"] {
+  display: none;
+}
+
+.upload-label {
+  background-color: #007bff; /* Blue color for the button */
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Custom T-shirt Section */ 
+.custom-tshirt {
+  margin-top: 20px;
+}
+
+.color {
+  margin: 10px;
+}
+
+/* Row-based Layout for Front and Back Design Options */
+.custom-tshirt-options {
+  display: flex;
+  justify-content: space-around; /* Space out options evenly */
+}
+.option-box {
+  background-color: black; /* Default background color */
+  color: white; /* Text color */
+  padding: 10px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor change on hover */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.option-box.selected {
+  background-color: red; /* Background color when selected */
+}
+.buy{
+  margin: 10px;
+  height: 50px;
+  width: calc(100% - 10px);
+  margin-bottom: 50px;
+}
+.buy-button{
+  height: inherit;
+  width: inherit;
+  align-items: center;
+  color: white;
+  justify-content: center;
+  border: none;
+  background-color: red;
+  font-family: "Josefin Sans";
+  font-size: 15px;
+  font-style: italic;
+  font-weight:800;
+  border-radius:15px;
+  
+}
